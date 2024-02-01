@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+:root{
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+
+    --Outfit-family: 'Outfit', sans-serif;
+    --Serif-family: 'Young Serif', serif;
+}
+body{
+    background-color: var(--Light-Grey) ;
+    font-family: var(--Serif-family);
+    color: var(--Wenge-Brown);
+}
+.card__container{
+    width: 55%;
+    margin: 100px auto;
+    overflow: hidden;
+    object-fit: contain;
+}
+.container{
+    width: 90%;
+    margin: 10px auto;
+    background-color: var(--White);
+    overflow: hidden;
+    padding: 40px;
+    border-radius: 20px;
+}
+.inicio__img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.titulo{
+    font-size: 2.5em;
+    color: black;
+    padding: 20px 0;  
+}
+.parrafo{
+    padding-bottom: 30px;
+}
+.preparacion{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--Rose-White);
+    border-radius: 10px;
+}
+.preparacio__subtitulo{
+    padding-bottom: 10px;
+    font-family: var(--Outfit-family);
+    color: var(--Dark-Raspberry);
+}
+.lista{
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+.list{
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.negrita{
+    font-weight: 700;
+}
+.section__container{
+    padding-top: 30px;
+    border-bottom: 1px solid var(--Light-Grey);
+}
+.subtitulo{
+    color: var(--Nutmeg);
+    padding-bottom: 20px;
+}
+.nutricion{
+    padding-top: 20px;
+}
+.nutricion__tabla{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;   
+    padding-top: 15px;
+}
+.element{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--Light-Grey);
+}
+.elemento{
+    width: 50%;
+    padding: 10px 0px;
+    padding-left: 30px;
+   
+}
+.elemento--color p{
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+@media (max-width:750px){
+    .card__container{
+        width: 100%;
+        margin: 0;
+    }
+    .container{
+        width: 100%;
+        margin: 0;
+        background-color: var(--White);
+        overflow: hidden;
+        padding: 0;
+        border-radius: 0%;
+    }
+    .inicio__img{
+        width: 100%;
+        object-fit: contain;
+        border-radius: 0%;
+    }
+    .titulo{
+        padding-left: 30px;
+    }
+    .parrafo{
+        padding: 0 30px;
+        line-height: 1.5rem;
+    }
+    .preparacion{
+        width: 85%;
+        margin: 30px auto;
+        margin-bottom: 0;
+        padding: 20px;
+        background-color: var(--Rose-White);
+        border-radius: 10px;
+    }
+    .section__container{
+        margin: 0 30px;
+    }
+    .nutricion{
+        margin: 0 30px;
+    }
+
+
+}
